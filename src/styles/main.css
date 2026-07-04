@@ -1032,7 +1032,6 @@ kbd {
   );
   opacity: 0.45;
   transition: opacity 0.4s ease, transform 0.5s ease;
-  animation: wt-card-gradient-spin 14s linear infinite;
 }
 .wt-card__bg-shine {
   position: absolute;
@@ -1046,12 +1045,6 @@ kbd {
   transform: translateX(-120%);
   transition: transform 0.7s ease;
 }
-.wt-card--code .wt-card__bg-gradient { animation-duration: 16s; }
-.wt-card--unit .wt-card__bg-gradient { animation-duration: 18s; animation-direction: reverse; }
-.wt-card--life .wt-card__bg-gradient { animation-duration: 20s; }
-.wt-card--image .wt-card__bg-gradient { animation-duration: 15s; animation-direction: reverse; }
-.wt-card--media .wt-card__bg-gradient { animation-duration: 17s; }
-
 .wt-card__link {
   display: block;
   padding: 20px 22px 18px;
@@ -1114,9 +1107,6 @@ kbd {
 @keyframes wt-card-in {
   from { opacity: 0; transform: translateY(16px) scale(0.98); }
   to { opacity: 1; transform: translateY(0) scale(1); }
-}
-@keyframes wt-card-gradient-spin {
-  to { transform: rotate(360deg); }
 }
 
 /* Tool page */
