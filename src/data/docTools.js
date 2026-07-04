@@ -1,0 +1,33 @@
+const cat = 'doc'
+const icon = 'logo-default.svg'
+
+export const docTools = [
+  { id: 'zip-pack', name: 'ZIP 文件压缩', desc: '多文件打包 ZIP', icon, category: cat, type: 'zip-pack' },
+  { id: 'zip-unpack', name: 'ZIP 文件解压', desc: '解压并下载文件', icon, category: cat, type: 'zip-unpack' },
+  { id: 'images-to-pdf', name: '图片转 PDF', desc: '多图合成 PDF 打印', icon, category: cat, type: 'images-to-pdf' },
+  { id: 'pdf-merge', name: 'PDF 文件合并', desc: '多 PDF 合并（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-split', name: 'PDF 文件拆分', desc: '按页拆分 PDF（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-compress', name: 'PDF 文件压缩', desc: '压缩 PDF 体积（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-watermark', name: 'PDF 文件加水印', desc: '添加文字水印（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-to-images', name: 'PDF 转图片', desc: '逐页转图片（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-to-long-image', name: 'PDF 转长图', desc: '拼接长图（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-reader', name: 'PDF 在线阅读器', desc: '浏览器内嵌阅读', icon, category: cat, type: 'pdf-reader' },
+  { id: 'pdf-delete-pages', name: 'PDF 页面删除', desc: '删除指定页（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-extract-images', name: 'PDF 提取图片', desc: '提取嵌入图片（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-deduplicate', name: 'PDF 页面去重', desc: '去除重复页（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-add-page-number', name: 'PDF 添加页码', desc: '批量加页码（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-rotate-remove', name: 'PDF 页面旋转/移除', desc: '旋转删除页（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-remove-blank', name: 'PDF 空白页删除', desc: '智能删空白（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-reverse-pages', name: 'PDF 页面顺序反转', desc: '倒置页序（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-crop', name: 'PDF 页面裁剪', desc: '裁剪边距（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-mirror', name: 'PDF 页面镜像翻转', desc: '镜像翻转（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-scale', name: 'PDF 页面缩放', desc: '缩放比例（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-book-layout', name: 'PDF 书册排版', desc: '装订排版（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-split-html', name: 'PDF 按页拆分 HTML', desc: '逐页 HTML（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'pdf-insert-blank', name: 'PDF 插入空白页', desc: '插入空白（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'word-to-pdf', name: 'WORD 转 PDF', desc: 'DOCX 转 PDF（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'svg-to-pdf', name: 'SVG 转 PDF', desc: 'SVG 转 PDF（开发中）', icon, category: cat, type: 'pdf-stub' },
+  { id: 'csv-to-excel', name: 'CSV 转 Excel', desc: 'CSV 转 XLSX', icon, category: cat, type: 'csv-to-excel' },
+  { id: 'excel-to-csv', name: 'Excel 转 CSV', desc: 'XLSX 转 CSV', icon, category: cat, type: 'excel-to-csv' },
+  { id: 'vcf-generator', name: '通讯录文件生成', desc: '生成 VCF 通讯录', icon, category: cat, type: 'vcf-generator' },
+]
