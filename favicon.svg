@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="hammer" x1="8" y1="10" x2="36" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="18" y1="6" x2="34" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fef08a"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 锤子：斜向构图，圆角几何体 -->
+  <g transform="rotate(-30 24 26)">
+    <rect x="18.5" y="21" width="6" height="19" rx="3" fill="url(#hammer)"/>
+    <rect x="9" y="15" width="25" height="9.5" rx="2.5" fill="url(#hammer)"/>
+  </g>
+
+  <!-- 闪电：叠在锤头前方，增强力量感 -->
+  <path
+    fill="url(#bolt)"
+    d="M30.5 6.5 24.5 20.5H29L21 34.5l9.5-12H26l4.5-16z"
+  />
+  <path
+    fill="#fff"
+    fill-opacity=".4"
+    d="M29 7.5 25.5 18H28l-4 9.5 5.5-7H27l2-11z"
+  />
+</svg>

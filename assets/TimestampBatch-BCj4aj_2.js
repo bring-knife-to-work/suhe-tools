@@ -1,0 +1,3 @@
+import{F as e,I as t,O as n,P as r,_ as i,p as a,v as o}from"./index-DMHFHr8C.js";import{t as s}from"./WtToolPanel-4s7f75Vz.js";import{t as c}from"./converters-lTp3Bcem.js";var l={__name:`TimestampBatch`,setup(l){let u=t(`1704067200
+1704153600
+1704240000`),d=t(``),f=t(`YYYY-MM-DD HH:mm:ss`),p=t(``);function m(){p.value=``;try{d.value=c(u.value,f.value)}catch(e){p.value=e.message}}return(t,c)=>(n(),o(s,{input:u.value,"onUpdate:input":c[1]||=e=>u.value=e,output:d.value,error:p.value,title:`时间戳批量转换`,"input-placeholder":`每行一个时间戳`},{actions:r(()=>[e(i(`input`,{"onUpdate:modelValue":c[0]||=e=>f.value=e,class:`wt-input`,placeholder:`输出格式`},null,512),[[a,f.value]]),i(`button`,{class:`wt-btn`,onClick:m},`转换`)]),_:1},8,[`input`,`output`,`error`]))}};export{l as default};
