@@ -10,7 +10,7 @@
 
     <header v-if="tool" class="wt-tool-header" :style="{ '--wt-tool-color': catMeta?.color }">
       <div class="wt-tool-header__icon" :style="{ background: (catMeta?.color || '#6366f1') + '15' }">
-        <img :src="`/logos/${tool.icon || 'logo-default.svg'}`" width="40" height="40" alt="" @error="onImgError" />
+        <img :src="iconSrc" width="40" height="40" alt="" @error="onImgError" />
       </div>
       <div class="wt-tool-header__info">
         <div class="wt-tool-header__meta">
@@ -42,12 +42,14 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { getToolById, categories } from '../data/tools'
 import { resolveToolComponent } from '../tools/registry'
+import { getDefaultIconSrc, getToolIconSrc } from '../utils/toolIcon'
 
 const route = useRoute()
 
 const tool = computed(() => getToolById(route.params.id))
 const toolComponent = computed(() => resolveToolComponent(route.params.id))
 const catMeta = computed(() => categories.find(c => c.id === tool.value?.category))
+const iconSrc = computed(() => tool.value ? getToolIconSrc(tool.value) : getDefaultIconSrc())
 
-function onImgError(e) { e.target.src = '/logos/logo-default.svg' }
+function onImgError(e) { e.target.src = getDefaultIconSrc() }
 </script>

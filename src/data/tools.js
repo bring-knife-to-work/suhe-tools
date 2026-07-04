@@ -39,7 +39,7 @@ export const codeTools = [
   { id: 'loading', name: 'CSS页面加载动画', desc: '多种 CSS Loading 动画代码大全', icon: 'logo-loading.svg', category: 'code', type: 'code' },
 ]
 
-export const tools = [
+const rawTools = [
   ...codeTools,
   ...unitTools,
   ...lifeTools,
@@ -50,6 +50,12 @@ export const tools = [
   ...docTools,
   ...webmasterTools,
 ]
+
+/** 无专属图标时按工具 id 生成 logo-{id}.svg */
+export const tools = rawTools.map(tool => ({
+  ...tool,
+  icon: tool.icon && tool.icon !== 'logo-default.svg' ? tool.icon : `logo-${tool.id}.svg`,
+}))
 
 export const categories = [
   { id: 'all', name: '全部工具', icon: '🏠', color: '#6366f1', desc: '300+ 在线工具一站直达' },
